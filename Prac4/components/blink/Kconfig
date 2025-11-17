@@ -1,0 +1,16 @@
+menu "Blink Configuration"
+
+config BLINK_GPIO
+    int "Blink GPIO number"
+    default 2
+    help
+        GPIO for the onboard WS2812 LED.
+
+config BLINK_PERIOD
+    int "Blink period in ms"
+    default 1000
+    help
+        Blink interval in milliseconds.
+
+endmenu
+
